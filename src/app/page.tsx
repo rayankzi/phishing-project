@@ -1,9 +1,20 @@
-import { Button, buttonVariants } from "@/components/ui/button"
+"use client"
+
+import { Button } from "@/components/ui/button"
 import { QuestionAccordion } from "@/components/QuestionAccordion";
-import Link from "next/link";
-import {cn} from "@/lib/utils";
+import type { MouseEventHandler } from "react";
+import { sendToNewLink } from "@/app/actions";
 
 export default function Home() {
+  const urls: string[] = ["https://ui.shadcn.com/docs/components/accordion", "https://github.com/radix-ui/icons/pull/194", "https://tailwindcss.com/docs/font-weight#basic-example", "http://ui.shadcn.com/docs/components/button"]
+
+  const redirectToSurvey: MouseEventHandler<HTMLButtonElement> = (e) => {
+    const url = urls[Math.floor(Math.random() * urls.length)]
+
+    sendToNewLink(url)
+    e.preventDefault()
+  }
+
   return (
     <div className="p-4 md:p-0 md:pt-4 md:flex md:justify-center md:items-center md:mx-auto md:w-2/5">
       <div className="space-y-4">
@@ -24,15 +35,8 @@ export default function Home() {
 
 
         <div className="w-full">
-          <Link
-            href="/"
-            className={cn(buttonVariants({ variant: "default" }), "w-full")}
-          >
-            Click here to access the survey
-          </Link>
+          <Button className="w-full cursor-pointer" onClick={redirectToSurvey}>Click here to access the survey</Button>
         </div>
-
-
       </div>
     </div>
   );

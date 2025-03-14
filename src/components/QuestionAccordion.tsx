@@ -19,9 +19,10 @@ export function QuestionAccordion() {
         <AccordionItem value="item-2">
           <AccordionTrigger>How long is the survey going to take?</AccordionTrigger>
           <AccordionContent>
-            This survey should take about 3-5 minutes; it involves the participant answering one question about
-            their knowledge of cybersecurity, reading an email, and answering one question about the authenticity
-            of that email. After the participant submits the survey, no other action by the participant is required.
+            There are two questions that ask about your knowledge of computers and cybersecurity. Then, there is
+            some information about Delphi&apos;s Delights, a fictional cafe. Finally, there is an email displayed
+            pertaining to Delphi&apos;s Delights, and the participant will be asked a question about the authenticity
+            of the email.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-3">

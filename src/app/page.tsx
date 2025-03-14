@@ -6,7 +6,12 @@ import type { MouseEventHandler } from "react";
 import { sendToNewLink } from "@/app/actions";
 
 export default function Home() {
-  const urls: string[] = ["https://ui.shadcn.com/docs/components/accordion", "https://github.com/radix-ui/icons/pull/194", "https://tailwindcss.com/docs/font-weight#basic-example", "http://ui.shadcn.com/docs/components/button"]
+  const urls: string[] = [
+    "https://forms.gle/jTEsijvRaN9rZSPF8",
+    "https://forms.gle/aSYQfYQqW3vj1hdr8",
+    "https://forms.gle/zFw5UyYwxD66k3J1A",
+    "https://forms.gle/KJDfefbTJTuDuLZg9"
+  ]
 
   const redirectToSurvey: MouseEventHandler<HTMLButtonElement> = (e) => {
     const url = urls[Math.floor(Math.random() * urls.length)]

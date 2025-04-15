@@ -14,7 +14,7 @@ export default function Home() {
   ]
 
   const redirectToSurvey: MouseEventHandler<HTMLButtonElement> = (e) => {
-    const url = urls[Math.floor(Math.random() * urls.length)]
+      const url = urls[Math.floor(Math.random() * urls.length)]
 
     sendToNewLink(url)
     e.preventDefault()

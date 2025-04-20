@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <div className="p-4 md:p-0 md:pt-4 md:flex md:justify-center md:items-center md:mx-auto md:w-2/5">
       <div className="space-y-4">
-        <h1 className="text-2xl font-bold">Generating Phishing Emails with AI: Which Email Does It Best?</h1>
+        <h1 className="text-2xl font-bold">Generating Phishing Emails with AI: A Comparative Analysis on Their Human Detection</h1>
 
         <p>
           Hello! I am humbly asking you for voluntary participation in a survey for my independent research project.
